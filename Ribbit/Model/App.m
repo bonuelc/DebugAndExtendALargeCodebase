@@ -17,6 +17,8 @@
 
 @implementation App
 
+NSArray * allUsers = nil;
+
 + (instancetype) currentApp {
   static App *sharedApp = nil;
   
@@ -42,13 +44,19 @@
 }
 
 - (NSArray *)allUsers {
-  return  @[ [User userWithUsername:@"John"],
-             [User userWithUsername:@"Andrew"],
-             [User userWithUsername:@"Ben"],
-             [User userWithUsername:@"Pasan"],
-             [User userWithUsername:@"Amit"],
-             [User userWithUsername:@"Craig"],
-             [User userWithUsername:@"Alena"]];
+    if (allUsers) {
+        return allUsers;
+    }
+    
+    allUsers = @[ [User userWithUsername:@"John"],
+            [User userWithUsername:@"Andrew"],
+            [User userWithUsername:@"Ben"],
+            [User userWithUsername:@"Pasan"],
+            [User userWithUsername:@"Amit"],
+            [User userWithUsername:@"Craig"],
+            [User userWithUsername:@"Alena"]];
+    
+    return allUsers;
 }
 
 
