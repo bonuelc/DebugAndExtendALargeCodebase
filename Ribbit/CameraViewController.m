@@ -195,10 +195,11 @@
           
             [message saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                 if (error) {
-                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"An error occurred!"
-                                                                        message:@"Please try sending your message again."
-                                                                       delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                    [alertView show];
+                    UIAlertController *alertController  = [UIAlertController alertControllerWithTitle:@"An error occurred!" message:@"Please try sending your message again." preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                    [alertController addAction:okAction];
+                    
+                    [self presentViewController:alertController animated:true completion:nil];
                 }
                 else {
                     // Everything was successful!
