@@ -36,5 +36,7 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string></string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone access required to record videos.</string>
 </dict>
 </plist>
