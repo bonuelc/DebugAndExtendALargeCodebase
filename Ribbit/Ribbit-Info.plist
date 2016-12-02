@@ -38,5 +38,7 @@
 	<string></string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Microphone access required to record videos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Access required to save photos and videos to the Photos app.</string>
 </dict>
 </plist>
