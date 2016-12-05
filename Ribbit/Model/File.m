@@ -29,7 +29,7 @@ NSString * const CacheDirectoryName = @"ribbit-cache";
 }
 
 - (NSURL*)fileURL {
-  return [NSURL fileURLWithPath:self.filename];
+  return [NSURL fileURLWithPath:[self filePath]];
 }
 
 
