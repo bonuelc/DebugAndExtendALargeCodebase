@@ -20,8 +20,7 @@
     [super viewDidLoad];
 	
   File *imageFile = self.message.file;
-    NSData *imageData = [NSData dataWithContentsOfURL:imageFile.fileURL];
-    self.imageView.image = [UIImage imageWithData:imageData];
+    self.imageView.image = [UIImage imageWithData:imageFile.data];
     
     NSString *senderName = self.message.senderName;
     NSString *title = [NSString stringWithFormat:@"Sent from %@", senderName];
