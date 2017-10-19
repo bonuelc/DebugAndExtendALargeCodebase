@@ -1,5 +1,7 @@
 # DebugAndExtendALargeCodebase
 
+Treehouse iOS Techdegree Project #9
+
 You are being given a large legacy codebase. Some of the code will be quite familiar, some less so. This is quite intentional as we want you to practice the very common tasks of: debugging, deciphering unfamiliar code, researching documentation, and trying out new objects and frameworks.
 
 Explicitly, your mission will be to fix and test X of the Y bugs listed below. If you would like to be eligible for a rating of “exceeds expectations”, you will also need to implement messaging with a real backend and update the app based on designs in the provided mockups. Remember, when you fix a bug, you are not simply trying to get rid of the symptom, but addressing the root cause of the bug. Be sure to leave comments in your code explaining how you tracked down and fixed each bug.
